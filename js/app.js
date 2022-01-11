@@ -1,5 +1,3 @@
-// RECUERDA: Plantear paso a paso lo que debe hacer la aplicación; no escribir directamente código JavaScript
-
 
 // Seleccionar el boton del DOM
 let boton = document.querySelector('#btn');
@@ -7,9 +5,9 @@ let boton = document.querySelector('#btn');
 // Seleccionar Body
 let body = document.querySelector('body');
 
-// Seleccionar input
-let input = document.querySelector('#hex-value');
-input.innerHTML = "#ffffff";
+// Seleccionar campo de texto donde agregar el color actual
+let texto_color = document.querySelector('#hex-value');
+texto_color.innerHTML = "#ffffff";
 
 // Probar click con mensaje por consola
 boton.addEventListener("click", () => {
@@ -26,8 +24,8 @@ cambioColor = () => {
     // Cambio de color
     body.style.backgroundColor = color_hexadecimal;
 
-    // Escribir color hexadecimal en el input
-    input.innerHTML = color_hexadecimal;
+    // Agregar color hexadecimal en el campo de texto
+    texto_color.innerHTML = color_hexadecimal;
     
 }     
 
